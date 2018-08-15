@@ -1,0 +1,30 @@
+doctype html
+html.no-js(lang='en')
+  block vars
+
+  head
+    title Sponsor Hunt - #{title}
+    link(rel="stylesheet" type="text/css" href="_sass/main.scss")
+
+  body
+    section.hero.is-info.is-fullheight
+      .hero-head
+        nav.navbar
+          .container
+            .navbar-brand
+              a.navbar-item
+                img(src='https://bulma.io/images/bulma-type-white.png', alt='Logo')
+              span.navbar-burger.burger(data-target='navbarMenuHeroB')
+                span
+                span
+                span
+            #navbarMenuHeroB.navbar-menu
+              .navbar-end
+                a.navbar-item(href="index.pug")
+                  | Index
+                a.navbar-item(href="about.pug")
+                  | About
+      .hero-body
+        .container.has-text-centered
+          p.title
+            block content

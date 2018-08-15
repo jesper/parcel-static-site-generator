@@ -1,0 +1,16 @@
+
+// Comment out if you don't want to override bulma vars
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+$red: #ff2222;
+
+h4 {
+  color: $red;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+@import "../node_modules/bulma/bulma";

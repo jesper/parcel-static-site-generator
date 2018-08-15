@@ -1,0 +1,21 @@
+{
+  "name": "parcel-static-site-generator",
+  "version": "1.0.0",
+  "description": "This is an example of a statically generated site made with Parcel",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build *.pug",
+    "dev": "parcel watch --log-level 3 *.pug& cd dist && browser-sync start . -s --files dist/*"
+  },
+  "author": "Jesper Thomschutz",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.24.6",
+    "bulma": "^0.7.1",
+    "node-sass": "^4.9.3",
+    "parcel-bundler": "^1.9.7"
+  },
+  "devDependencies": {
+    "pug": "^2.0.3"
+  }
+}
